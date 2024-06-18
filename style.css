@@ -244,18 +244,97 @@ h1, h2, h3, h4, h5, h6, p {
 .project-p{
     color: var(--grey-color);
 }
+
+.about__orange{
+    margin-top: 125px;
+    background-color: var(--accent-color);
+    height: 181px;
+    
+}
+.about__forFlex {
+    display: flex;
+    justify-content:space-between;
+
+}
+.about__h3{
+    letter-spacing: 1px;
+    font-family:  "Oswald", sans-serif;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.text__h6{
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+    font-family:  "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--white-color);
+    text-transform: uppercase;
+
+}
+.flex__texts{
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.about__button{
+    display: flex;
+    gap: 15px;
+    justify-content:center;
+    align-items: center;
+    width: 175px;
+    height: 49px;
+    margin-top: 73px;
+    margin-bottom: 59px;
+    background-color: #FFFFFF;
+    border: 0px;
+}
+
+.about__button>p{
+    font-family:  "Oswald", sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-right: 1px;
+
+}
+
 @media screen and (max-width: 1280px){
     .about{
         padding: 450px 15px 110px 15px;
     }
 @media screen and (max-width: 768px){
-    .info{
-        position: relative;
+    .about{
+        padding-top: 150px;
+        padding-bottom: 80px;
     }
-    .about__grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
-        justify-items: center;
+ .about__flex{
+    flex-direction: column;
+    align-items: center;
+ }
+ .about__flex-item {
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+.about__flex-item:last-child{
+    margin-bottom: 0;
+}
+}
+@media screen and (max-width: 1175px){
+    .about__forFlex {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+} 
+@media screen and (max-width: 768px){
+    .about__forFlex {
+        flex-wrap: wrap;
+        background-color: #F7654A;
+    }
+    button.about__button{
+        margin-top: 5px;
     }
 }
